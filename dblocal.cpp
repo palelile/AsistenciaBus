@@ -2,7 +2,9 @@
 
 dbLocal::dbLocal()
 {
-    inicializar();
+    db_local = NULL;
+    if ( !inicializar() )
+        exit(1);
 }
 
 bool dbLocal::inicializar()

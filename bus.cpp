@@ -11,7 +11,7 @@ Bus::Bus(QWidget *parent) :
 	connect(ui->toolBox, SIGNAL(currentChanged(int)), this, SLOT(cambioDePagina(int)));
     connect(ui->bot_imp_txt, SIGNAL(pressed()), this, SLOT(importar_Sige()) );
 	cargarOpciones();
-	this->showFullScreen();
+    this->showMaximized();
 	ui->toolBox->setCurrentIndex(0);
 	ui->asistenciaRut->setFocus();
     db_local = new dbLocal();
